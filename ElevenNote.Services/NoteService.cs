@@ -1,6 +1,5 @@
 ﻿using ElevenNote.Data;
 using ElevenNote.Models;
-using ElevenNote.WebMVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

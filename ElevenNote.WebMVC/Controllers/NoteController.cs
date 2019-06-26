@@ -1,6 +1,5 @@
 ﻿using ElevenNote.Models;
 using ElevenNote.Services;
-using ElevenNote.WebMVC.Models;
 using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
@@ -36,7 +35,7 @@ namespace ElevenNote.WebMVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(NoteCreate model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return View(model);
             }
