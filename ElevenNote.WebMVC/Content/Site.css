@@ -1,8 +1,14 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url("https://images.pexels.com/photos/2480684/pexels-photo-2480684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
+.container {
+    background-color: rgba(0, 255, 255, 0.6);
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
