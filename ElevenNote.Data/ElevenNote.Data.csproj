@@ -63,6 +63,14 @@
     <Compile Include="Migrations\201906261524061_Update-Database.Designer.cs">
       <DependentUpon>201906261524061_Update-Database.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906271514590_2nd upae.cs" />
+    <Compile Include="Migrations\201906271514590_2nd upae.Designer.cs">
+      <DependentUpon>201906271514590_2nd upae.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906271519116_update-again.cs" />
+    <Compile Include="Migrations\201906271519116_update-again.Designer.cs">
+      <DependentUpon>201906271519116_update-again.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,6 +85,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906261524061_Update-Database.resx">
       <DependentUpon>201906261524061_Update-Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906271514590_2nd upae.resx">
+      <DependentUpon>201906271514590_2nd upae.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906271519116_update-again.resx">
+      <DependentUpon>201906271519116_update-again.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
