@@ -9,9 +9,10 @@ namespace ElevenNote.Models
     public class NoteListItem
     {
         public int NoteID { get; set; }
+        [Display(Name = "Created")]
         public string Title { get; set; }
-        [Display(Name="Created")]
         [UIHint("Starred")]
+        [Display(Name = "Important")]
         public bool IsStarred { get; set; }
         public DateTimeOffset CreateUtc { get; set; }
     }
