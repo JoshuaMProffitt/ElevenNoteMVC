@@ -19,8 +19,8 @@ namespace ElevenNote.WebMVC.Controllers
         public ActionResult Index()
         {
             var userID = Guid.Parse(User.Identity.GetUserId());
-            var Service = new NoteService(userID);
-            var model = Service.GetNotes();
+            var service = new NoteService(userID);
+            var model = service.GetNotes();
 
             return View(model);
         }
@@ -35,10 +35,7 @@ namespace ElevenNote.WebMVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(NoteCreate model)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
+            if (!ModelState.IsValid) return View(model);
             var service = CreateNoteService();
 
             if (service.CreateNote(model))
